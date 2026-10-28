@@ -1,12 +1,51 @@
-.card-img-top {
-        height: 250px;
-        width: 100%;
-        object-fit: contain;
-        /*object-fit: cover;*/
-    }
-    .card {
-        background-color: #dbeafe;
-    }
-    .card-title {
-        color: #1e3a8a;
-    }
+.masthead:has(.profesor-show-page) {
+    background: linear-gradient(135deg, #00a985, #00c49a) !important;
+}
+
+.profesor-show-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: min(100% - 2rem, 29rem);
+    margin: 0 auto;
+}
+
+.profesor-card {
+    width: 100%;
+    padding: 1.5rem;
+    color: #1e3a8a;
+    background-color: #dbeafe;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 12%);
+}
+
+.profesor-card-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profesor-avatar {
+    width: 10rem;
+    height: 10rem;
+}
+
+.profesor-card h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.profesor-card-details {
+    text-align: center;
+}
+
+.profesor-card-details p {
+    margin-bottom: 0.5rem;
+}
+
+.profesor-card-details .btn {
+    margin-top: 0.5rem;
+}

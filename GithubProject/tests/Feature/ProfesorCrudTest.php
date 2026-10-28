@@ -53,9 +53,11 @@ class ProfesorCrudTest extends TestCase
         $this->get(route('profesor.show', $profesor))
             ->assertOk()
             ->assertSee('Ana García López')
-            ->assertSee('ID')
-            ->assertSee((string) $profesor->id)
+            ->assertSee('Especialidad:')
+            ->assertSee('Matemáticas')
+            ->assertSee('Fecha de alta:')
             ->assertSee('15/01/2026')
+            ->assertSee('Salario:')
             ->assertSee('42.500,50');
 
         $this->get(route('profesor.edit', $profesor))
